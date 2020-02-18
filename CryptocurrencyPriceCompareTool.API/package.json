@@ -1,0 +1,25 @@
+{
+  "name": "cryptoarbitrage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "debug": "node --nolazy --inspect-brk=9229 index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "connect-timeout": "^1.9.0",
+    "create-react-app": "^1.5.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.2",
+    "nodemon": "^1.14.11",
+    "npm": "^5.8.0",
+    "request": "^2.88.0"
+  }
+}

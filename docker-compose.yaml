@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  cryptocurrency-price-compare-tool.api:
+    build: ./CryptocurrencyPriceCompareTool.API
+    image: cryptocurrency-price-compare-tool.api
+    container_name: cryptocurrency-price-compare-tool.api
+    ports:
+      - '5000:5000'
+  
+  cryptocurrency-price-compare-tool.ui:
+    build: ./CryptocurrencyPriceCompareTool.UI
+    image: cryptocurrency-price-compare-tool.ui
+    container_name: cryptocurrency-price-compare-tool.ui
+    ports:
+      - '3000:3000'
