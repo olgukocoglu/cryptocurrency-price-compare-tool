@@ -13,4 +13,4 @@ services:
     image: cryptocurrency-price-compare-tool.ui
     container_name: cryptocurrency-price-compare-tool.ui
     ports:
-      - '3000:3000'
+      - '3000:80'
